@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>A2._1._6_Opacidad</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\opacity.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\episodioIV.jpg" />
+    <None Remove="Assets\episodioV.jpg" />
+    <None Remove="Assets\episodioVI.jpg" />
+    <None Remove="Assets\opacity.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\opacity.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\episodioIV.jpg" />
+    <Resource Include="Assets\episodioV.jpg" />
+    <Resource Include="Assets\episodioVI.jpg" />
+    <Resource Include="Assets\opacity.ico" />
+  </ItemGroup>
+
+</Project>

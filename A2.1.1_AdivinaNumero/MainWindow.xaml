@@ -1,0 +1,58 @@
+﻿<Window x:Class="A2._1._1_AdivinaNumero.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A2._1._1_AdivinaNumero"
+        mc:Ignorable="d"
+        Title="Adivina el número" 
+        MinHeight="150" MinWidth="500"
+        MaxHeight="250" MaxWidth="690"
+        Height="200" Width="441">
+
+    <Grid Margin="0,0,10,1">
+        <!-- <Label>¿Qué número he pensado?</Label> -->
+        <Label Content="¿Qué número he pensado?"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               FontSize="20"
+               Margin="30,24,0,0"
+               />
+        <TextBox x:Name="numeroTextBox"
+                 HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Width="120"
+                 Height="30"
+                 Margin="313,31,0,0"
+                 FontSize="20"
+                 />
+        <Button Content="Comprobar"
+                FontSize="20"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="145"
+                Height="44"
+                Margin="43,92,0,0" 
+                Click="ComprobarButton_Click"
+                IsDefault="true"/>
+        <Button Content="Reiniciar"
+                FontSize="20"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="145"
+                Height="44"
+                Margin="228,92,0,0" 
+                Click="ReiniciarButton_Click"/>
+        <TextBlock x:Name="resultadoTextBlock"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     Width="210"
+                     Height="85"
+                     Margin="460,29,0,0"
+                     FontSize="15"
+                   Text=""
+                   TextWrapping="Wrap"
+                   Foreground="Red"
+                     />
+    </Grid>
+</Window>

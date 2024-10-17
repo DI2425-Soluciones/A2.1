@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>A2._1._5_FormatoTexto</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\config.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\config.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\config.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\config.ico" />
+  </ItemGroup>
+
+</Project>
